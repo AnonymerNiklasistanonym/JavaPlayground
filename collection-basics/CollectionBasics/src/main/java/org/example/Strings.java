@@ -80,6 +80,18 @@ public class Strings {
         String formatted = String.format("Name: %s, Age: %d", "Alice", 30);
         System.out.println("Formatted: " + formatted);
 
+        // Printf
+        System.out.printf("Default:    [%d]%n", 42);
+        System.out.printf("Width 5:    [%5d]%n", 42);    // Right-aligned
+        System.out.printf("Left-align: [%-5d]%n", 42);   // Left-aligned
+        System.out.printf("Zero-pad:   [%05d]%n", 42);   // Padded with zeros
+
+        System.out.printf("[%-10s]%n", "Hi");    // Left-aligned, width 10
+        System.out.printf("[%-10d]%n", 42);      // Left-aligned integer
+        System.out.printf("[%-10.2f]%n", 3.14);
+
+        System.out.printf("format string %d %s%n", 1, "name");
+
         // matches (regex)
         System.out.println("Matches regex '[A-Z].*!': " + str.matches("[A-Z].*!"));
 
