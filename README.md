@@ -123,6 +123,16 @@ make clean
 make
 ```
 
+> [!IMPORTANT]
+> To run a JavaFX `.jar` **on Linux** the OpenJFX library path needs to be explicitly set since it only contains the `.class` files and not the necessary platform specific binary files (e.g. `.so`, check with `jar tf path/to/target.jar`):
+>
+> ```sh
+> # openjfx was installed to /usr/lib/jvm/java-24-openjfx
+> java --module-path /usr/lib/jvm/java-24-openjfx/lib/ \
+>      --add-modules javafx.controls,javafx.fxml \
+>      -jar path/to/target.jar
+> ```
+
 **Windows:**
 
 ```powershell
@@ -134,16 +144,6 @@ mvn clean
 # Create JAR
 mvn clean package
 ```
-
-> [!IMPORTANT]
-> To run a JavaFX `.jar` the OpenJFX library path needs to be explicitly set since it only contains the `.class` files and not the necessary platform specific binary files (e.g. `.so`, check with `jar tf path/to/target.jar`):
->
-> ```sh
-> # openjfx was installed to /usr/lib/jvm/java-24-openjfx
-> java --module-path /usr/lib/jvm/java-24-openjfx/lib/ \
->      --add-modules javafx.controls,javafx.fxml \
->      -jar path/to/target.jar
-> ```
 
 ### Dev Tools
 
