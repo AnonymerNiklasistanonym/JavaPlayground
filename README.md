@@ -152,3 +152,35 @@ mvn clean package
 Download from [Konloch/bytecode-viewer](https://github.com/Konloch/bytecode-viewer/releases).
 
 Analyze `.jar`/`.class` files.
+
+### How does Java work?
+
+Java is a programming language that is:
+
+- **high-level**: abstracts away low-level hardware details, making it easier to write, read, and maintain
+- general-purpose,
+- **memory-safe**: prevents common memory issues like segmentation faults, buffer overflows, dangling pointers via automatic garbage collection and strict type checking
+  - You can't manually access memory addresses
+  - Java automatically reclaims unused memory, reducing the risk of memory leaks and dangling pointers (where memory is freed but still accessed)
+    - Memory leaks are NOT impossible!
+    - If you hold references to objects you no longer need, they won't be collected
+    - JNI (Java Native Interface): When Java calls into native code (e.g., C/C++ libraries), you leave the safety of the JVM
+  - Accessing outside the bounds of an array will throw a ArrayIndexOutOfBoundsException, rather than corrupting memory
+  - You can't randomly cast unrelated types or access memory as if it were a different type, which avoids undefined behavior
+- **object-oriented**: Emphasizes concepts like classes, objects, inheritance, and polymorphism
+- **platform independent** and **compiled**: Code is compiled into *bytecode* (optimizing), which runs on any system with a *Java Virtual Machine* (*JVM*)
+  - this *bytecode* is more compact and optimized than the Java source code since it removes unnecessary syntax useful for humans like formatting, variable names and comments **TODO**
+  - additionally the *bytecode* is only run if it contains no syntax errors or other illegal code constructs
+- **statically typed**: Types are checked at compile-time, reducing lots of runtime errors and explicit checks
+- **
+
+
+#### Compilation
+
+
+
+
+
+
+
+*Based on ["How Java REALLY Works: Packages, Jars & Classpath"](https://www.youtube.com/watch?v=zJPFwGs4q9o)*
