@@ -37,19 +37,39 @@ Fields:
 
 - `time`: Approximate time in milliseconds (or ticks) since the JVM started
 - `compile_id`: An internal ID assigned to the compilation
-- `level`:
+- `level`: The JVM has a tiered compilation system which balances startup speed with long-term performance
   - `1`: Interpreter or C1 (client compiler, lower-tier)
+    - Interpreter means the code runs without compilation (slower but gathers profiling info)
+    - C1 compilation in this case doesn't wait for profiling info and is very fast
   - `3`: C1 with profiling (common early tier)
+    - C1 compilation with instrumentation to gather profiling data (e.g., branch frequencies, type profiling).
+    - Methods compiled with tier 3 are eligible for recompilation by C2 when enough data is collected
+    - The compilation is slightly slower than Tier 1
   - `4`: C2 (server compiler, optimized)
+    - Uses all profiling data gathered by earlier tiers
+    - Performs aggressive optimizations like:
+      - Method inlining
+      - Loop unrolling
+      - Dead code elimination
+      - Escape analysis
+    - The compilation is much slower than C1
   - `n`: Native method
+    - JVM can't optimize this instruction since it's already written in native machine code (e.g. C/C++, `java.lang.Object.hashCode()`)
   - `!`: Deoptimization trigger
+    - Compiled code was discarded and the method was deoptimized back to the interpreter
+    - Happens for example when:
+      - Speculative optimization fails (e.g., type assumptions invalidated)
+        - Optimized for a single subclass, then a second subclass gets loaded
+      - Class loading changes invalidate compiled assumptions
+    - Hurts performance temporarily
   - `%`: On-Stack Replacement (OSR)
     - replace an already-running method with a compiled version of itself partway through execution
     - used when a method is long-running (like a loop)
     - JVM decides to optimize it without waiting for the next invocation
 - `method`: The class and method being compiled
 - `(<bytes>)`: Number of bytecode bytes in the method
-- `made not entrant`: JVM decided compiled code shouldn't be used anymore (e.g., because of profiling info changes)
+- `made not entrant`: JVM decided compiled code shouldn't be used anymore
+  - e.g. profiling info changes, old data, C1 version obsolete by superior C2 version
 - `(native)`: A method implemented in native code (e.g., from the JDK)
 - `(static)`: The method is a static method, declared like
 
