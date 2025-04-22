@@ -184,3 +184,20 @@ Java is a programming language that is:
 
 
 *Based on ["How Java REALLY Works: Packages, Jars & Classpath"](https://www.youtube.com/watch?v=zJPFwGs4q9o)*
+
+## IDEs
+
+### IntelliJ IDEA Community
+
+**Other**:
+
+- Change SDK/Language level: `File` > `Project Structure`
+
+**Plugins**:
+
+`File` > `Settings` >  `Plugins`:
+
+- `Marketplace`: Search and install plugins like
+  - `Project to Zip`: Converts project to `.zip` file without temporary/build files
+- `Installed`: Show installed plugins and remove/disable them
+  - Makes it possible to disable AI code completion
