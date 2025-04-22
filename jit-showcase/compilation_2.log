@@ -1,0 +1,173 @@
+<time>  <compile_id>  <level>  <method> (<bytes>) [optional flags]
+9    1       3       java.lang.Byte::toUnsignedInt (6 bytes)
+9    2       3       java.lang.String::hashCode (60 bytes)
+9    3       3       java.lang.Object::<init> (1 bytes)
+9    4     n 0       jdk.internal.misc.Unsafe::getReferenceVolatile (native)   
+9    5     n 0       jdk.internal.vm.Continuation::enterSpecial (native)   (static)
+9    6     n 0       jdk.internal.vm.Continuation::doYield (native)   (static)
+10    7       3       java.lang.String::coder (15 bytes)
+11    8       3       java.lang.String::length (11 bytes)
+11    9       3       java.lang.String::isLatin1 (19 bytes)
+[APP] Run 11   10       3       jdk.internal.util.Preconditions::checkIndex (18 bytes)
+11   11       3       java.lang.String::charAt (25 bytes)
+11   12       3       java.lang.StringLatin1::charAt (15 bytes)
+11   13       3       java.lang.String::checkIndex (10 bytes)
+11   14       3       sun.util.locale.LocaleUtils::isUpper (18 bytes)
+12   17       3       java.util.HashMap::putVal (300 bytes)
+12   16       3       java.util.HashMap::hash (20 bytes)
+12   18       3       java.util.HashMap::newNode (13 bytes)
+12   19       3       java.util.HashMap$Node::<init> (26 bytes)
+12   21     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)V (native)   (static)
+12   20       3       java.util.HashMap::afterNodeInsertion (1 bytes)
+13   15       3       java.lang.String::equals (56 bytes)
+13   22       1       java.lang.Enum::ordinal (5 bytes)
+13   23       4       java.lang.Object::<init> (1 bytes)
+13   24     n 0       java.lang.invoke.MethodHandle::invokeBasic()L (native)   
+13    3       3       java.lang.Object::<init> (1 bytes)   made not entrant
+13   25     n 0       java.lang.Object::hashCode (native)   
+13   26     n 0       java.lang.System::arraycopy (native)   (static)
+13   27     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)L (native)   (static)
+14   28       3       java.util.concurrent.ConcurrentHashMap::tabAt (22 bytes)
+14   29       3       jdk.internal.misc.Unsafe::getReferenceAcquire (7 bytes)
+14   31     n 0       jdk.internal.misc.Unsafe::compareAndSetLong (native)   
+14   30       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+14   32       3       java.util.Objects::requireNonNull (14 bytes)
+15   33     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+15   34     n 0       java.lang.Class::isPrimitive (native)   
+15   35     n 0       java.lang.invoke.MethodHandle::linkToStatic(IIL)I (native)   (static)
+15   36       1       jdk.internal.util.StrongReferenceKey::get (5 bytes)
+16   37     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+16   38     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+16   39     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)V (native)   (static)
+16   40     n 0       java.lang.invoke.MethodHandle::invokeBasic(I)L (native)   
+16   41     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)L (native)   (static)
+16   42       3       java.util.regex.Pattern$$Lambda/0x80000002b::is (9 bytes)
+17   44       3       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)
+17   43       3       java.util.regex.Pattern::lambda$Single$0 (11 bytes)
+17   46       3       java.util.regex.Matcher::checkMatch (19 bytes)
+17   55       3       java.util.regex.Pattern$Start::match (90 bytes)
+17   62       3       java.util.regex.Matcher::search (154 bytes)
+17   47       3       java.util.regex.Matcher::hasMatch (13 bytes)
+17   64       4       java.lang.String::charAt (25 bytes)
+17   52       3       jdk.internal.util.Preconditions::checkFromToIndex (24 bytes)
+17   54       3       java.lang.String::substring (58 bytes)
+18   53       3       java.lang.String::checkBoundsBeginEnd (11 bytes)
+18   45       3       java.lang.Math::min (11 bytes)
+18   56       3       java.util.ArrayList::add (25 bytes)
+18   57       3       java.util.ArrayList::add (23 bytes)
+18   48       3       java.lang.String::<init> (15 bytes)
+18   49       3       java.util.Arrays::copyOfRange (82 bytes)
+18   50       3       java.lang.StringLatin1::newString (24 bytes)
+18   51       3       java.util.regex.Matcher::start (9 bytes)
+18   11       3       java.lang.String::charAt (25 bytes)   made not entrant
+18   58       3       java.lang.String::toString (2 bytes)
+18   65       4       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)
+18   59       3       java.lang.String::subSequence (7 bytes)
+18   60       3       java.util.regex.Matcher::end (9 bytes)
+18   61       3       java.util.regex.Matcher::find (69 bytes)
+18   67       3       jdk.internal.util.ArraysSupport::unsignedHashCode (36 bytes)
+18   69       3       java.util.ImmutableCollections$SetN::probe (56 bytes)
+18   63       3       java.util.regex.Pattern$LastNode::match (45 bytes)
+18   72       3       java.lang.StringLatin1::equals (36 bytes)
+18   71       3       jdk.internal.util.ArraysSupport::hashCodeOfUnsigned (55 bytes)
+18   68       3       java.lang.Math::floorMod (20 bytes)
+19   70       3       jdk.internal.util.ArraysSupport::vectorizedHashCode (158 bytes)
+19   44       3       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)   made not entrant
+19   73   !   3       java.lang.ref.ReferenceQueue::poll (58 bytes)
+19   74       1       java.lang.invoke.MethodType::returnType (5 bytes)
+19   75       3       jdk.internal.util.ReferencedKeyMap::removeStaleReferences (30 bytes)
+19   76       3       java.util.concurrent.ConcurrentHashMap::get (162 bytes)
+19   77     n 0       java.lang.Class::isArray (native)   
+19   78     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+19   79       1       java.lang.Class::getClassLoader (5 bytes)
+20   80     n 0       java.lang.Object::clone (native)   
+20   81     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+20   82       3       jdk.internal.util.ReferencedKeyMap::lookupKey (9 bytes)
+20   83       3       jdk.internal.util.StrongReferenceKey::<init> (10 bytes)
+20   84       3       jdk.internal.util.StrongReferenceKey::hashCode (8 bytes)
+20   66       4       java.lang.Byte::toUnsignedInt (6 bytes)
+20    1       3       java.lang.Byte::toUnsignedInt (6 bytes)   made not entrant
+21   85       3       java.lang.Enum::<init> (15 bytes)
+22   86     n 0       java.lang.invoke.MethodHandle::linkToStatic(LL)L (native)   (static)
+22   87       3       java.lang.invoke.MethodType::hashCode (53 bytes)
+22   88       1       java.lang.invoke.MemberName::getDeclaringClass (5 bytes)
+23   89       3       java.util.HashMap::put (13 bytes)
+23   64       4       java.lang.String::charAt (25 bytes)   made not entrant
+23   90       3       java.lang.StringUTF16::getChar (60 bytes)
+23   91       4       java.lang.StringUTF16::getChar (60 bytes)
+24   90       3       java.lang.StringUTF16::getChar (60 bytes)   made not entrant
+001 Time/Computation (ns): 001952
+[APP] Run 002 Time/Computation (ns): 002251
+[APP] Run 003 Time/Computation (ns): 002127
+24 [APP] Run 004 Time/Computation (ns):   92 002048      3      
+ java.lang.String::charAt (25 bytes)
+24   93       3       Main::computeSomething (26 bytes)
+[APP] Run 005 Time/Computation (ns): 24   94 001997      1      
+ java.lang.AbstractStringBuilder::length (5 bytes)
+[APP] Run 006 Time/Computation (ns): 000188
+24   95       1       java.nio.Buffer::position[APP] Run  (5 bytes)
+007 Time/Computation (ns): 000169
+[APP] Run 25   96       1      008 java.nio.Buffer::limit Time/Computation (ns):  (5 bytes)
+00017125 
+  97       3       java.lang.StringLatin1::indexOfChar (33 bytes)
+[APP] Run 009 Time/Computation (ns): 000171
+25 [APP] Run   98 %     4 010      Main:: Time/Computation (ns): computeSomething @ 4000200 (26 bytes)
+
+[APP] Run 011 Time/Computation (ns): 000175
+[APP] Run 012 Time/Computation (ns): 000170
+[APP] Run 013 Time/Computation (ns): 00017125 
+  99       3       java.nio.ByteBuffer::arrayOffset (35 bytes)
+[APP] Run 014 Time/Computation (ns): 000173
+25 [APP] Run  100       3 015      java.util.Formatter$Flags:: Time/Computation (ns): contains (13 bytes)
+000172
+25 [APP] Run  101       3 016      java.lang.StringLatin1:: Time/Computation (ns): canEncode (17 bytes)
+00017025 
+ 102       3       java.nio.Buffer::position (52 bytes)
+[APP] Run 017 Time/Computation (ns): 000170
+[APP] Run 25  103 018      3  Time/Computation (ns):       java.nio.CharBuffer::000170arrayOffset
+ (35 bytes)
+26  104       3       java.lang.StringBuilder::length (5 bytes)
+26  105       4 [APP] Run       Main::019computeSomething (26 bytes) Time/Computation (ns): 
+000276
+[APP] Run 020 Time/Computation (ns): 000254
+[APP] Run 021 Time/Computation (ns): 26 000206 106       
+3       java.lang.StringLatin1::indexOf (17 bytes)
+[APP] Run 022 Time/Computation (ns): 00022526 
+ 107       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (39 bytes)
+[APP] Run 023 Time/Computation (ns): 000227
+[APP] Run 26 024 108        Time/Computation (ns): 3      000210 java.io.PrintStream::ensureOpen
+ (18 bytes)
+26   93       3       Main::computeSomething (26 bytes)   made not entrant
+26   98 %     4       Main::computeSomething @ 4 (26 bytes)   made not entrant
+[APP] Run 025 Time/Computation (ns): 00057426 
+ 109       1       java.nio.Buffer::capacity (5 bytes)
+26 [APP] Run  110       3       java.util.Formatter::isDigit (18 bytes)
+26  111     n 0       java.lang.Float::floatToRawIntBits (native)   (static)
+02627  112       3       java.lang.String::valueOf (15 bytes)
+27  120     n 0       java.io.FileOutputStream::writeBytes (native)   
+ Time/Computation (ns): 27  114       3      000134 java.nio.Buffer::remaining (20 bytes)
+
+27  115       1       java.nio.charset.CharsetEncoder::maxBytesPerChar (5 bytes)
+[APP] Run 27  113       0273       Time/Computation (ns):  java.io.BufferedWriter::ensureOpen (18 bytes)000132
+27 
+ 119       3       java.nio.ByteBuffer::array (35 bytes)
+27  117       3 [APP] Run       java.nio.CharBuffer::position (8 bytes)028
+ Time/Computation (ns): 27  116       0001313      
+ java.nio.CharBuffer::position (6 bytes)
+27  118       3       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+27 [APP] Run  122       3 029      java.lang.AbstractStringBuilder:: Time/Computation (ns): isLatin1 (19 bytes)
+00013227 
+ 121       3       java.lang.StringLatin1::canEncode (13 bytes)
+[APP] Run 030 Time/Computation (ns): 000131
+[APP] Run 031 Time/Computation (ns): 000131
+[APP] Run 032 Time/Computation (ns): 000132
+[APP] Run 033 Time/Computation (ns): 000131
+[APP] Run 034 Time/Computation (ns): 000131
+[APP] Run 035 Time/Computation (ns): 00014427 
+ 123       3       java.lang.String::indexOf (41 bytes)
+[APP] Run 036 Time/Computation (ns): 000130
+[APP] Run 037 Time/Computation (ns): 000130
+[APP] Run 038 Time/Computation (ns): 000132
+28 [APP] Run  124       3 039      java.lang.Math:: Time/Computation (ns): max (11 bytes)
+000130
+[APP] Run 040 Time/Computation (ns): 000131
