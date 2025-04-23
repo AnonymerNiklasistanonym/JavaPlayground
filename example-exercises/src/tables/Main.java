@@ -18,6 +18,7 @@ public class Main {
                         --border_width: 0.1rem;
                         --border_style_normal: solid #ccc;
                         --border_style_thick: solid #444;
+                        --border_style_light: solid #ddd;
                     }
                     table {
                         border-collapse: collapse;
@@ -26,12 +27,11 @@ public class Main {
                         font-family: sans-serif;
                         font-size: 1rem;
                         border: var(--border_width) var(--border_style_normal);
-                        border-radius: 8px;
                     }
                     th, td {
                         padding: 0.5rem 1rem;
                         text-align: center;
-                        border-right: var(--border_width) solid #ddd;
+                        border-right: var(--border_width) var(--border_style_light);
                     }
                     th {
                         background-color: #f5f5f5;
