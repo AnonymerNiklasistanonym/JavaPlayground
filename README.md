@@ -223,6 +223,8 @@ Java is a programming language that is:
 
   - *Bytecode* is optimized for execution compared to the Java source code since it removes unnecessary syntax only useful for humans like comments, formatting, variable names and converts high-level commands into *Bytecode* instructions
   - additionally this will only be successful if the source code passes all **compile-time checks**, including syntax validation and structural correctness
+  - Generic Type Arguments like `T` will be erased (**type erasure**) during the compilation and replaced by either `java.lang.Object` or a set upper bound class (`T extends Number` becomes `java.lang.Number`)
+    - Type information at runtime is only limited available using e.g. reflections
 
 - *Just-In-Time* (JiT) executed: The *Java Virtual Machine* (*JVM*) optimizes the generated *Bytecode* dynamically depending if it's *hot* (repeatedly executed) using a tiered compilation
 
@@ -243,6 +245,29 @@ Java is a programming language that is:
   ```sh
   javac Main.java
   ```
+
+- This has the caveat that it will only compile if all symbols in that source code are available
+
+  - System libraries (`java.lang.*` for e.g. `String`)
+
+  - In the same directory
+
+    ```txt
+    o
+    |- Main.java
+    |- Helper.java
+    ```
+
+  - In another supplied `.java` file (e.g. `javac Main.java helper/Helper.java`)
+
+  - On the Class Path `javac -classpath . A.java`
+
+    ```txt
+    TODO
+    o
+    |- Main.java
+    |- Helper.java
+    ```
 
 #### Run
 

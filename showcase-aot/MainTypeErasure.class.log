@@ -1,0 +1,39 @@
+Compiled from "MainTypeErasure.java"
+public class MainTypeErasure {
+  public MainTypeErasure();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public <T> void print(T);
+    Code:
+       0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: aload_1
+       4: invokevirtual #13                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       7: return
+
+  public <T extends java.lang.Number> void printNumber(T);
+    Code:
+       0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: aload_1
+       4: invokevirtual #19                 // Method java/lang/Number.doubleValue:()D
+       7: invokevirtual #25                 // Method java/io/PrintStream.println:(D)V
+      10: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #28                 // class MainTypeErasure
+       3: dup
+       4: invokespecial #30                 // Method "<init>":()V
+       7: astore_1
+       8: aload_1
+       9: bipush        42
+      11: invokestatic  #31                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      14: invokevirtual #37                 // Method print:(Ljava/lang/Object;)V
+      17: aload_1
+      18: bipush        42
+      20: invokestatic  #31                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      23: invokevirtual #40                 // Method printNumber:(Ljava/lang/Number;)V
+      26: return
+}
