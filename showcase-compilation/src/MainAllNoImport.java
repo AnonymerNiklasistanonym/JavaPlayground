@@ -1,6 +1,6 @@
-public class MainAll {
+public class MainAllNoImport {
     public static void main(String[] args) {
-        var helper = new HelperAll();
+        var helper = new HelperAllNoPackage();
         helper.helloWorld();
     }
 }
