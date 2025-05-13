@@ -77,7 +77,33 @@ public class MyApp {
   // ...
   ```
   
-  changes the Fully Qualified Classname to: `math.Calculator`.
+  changes the Fully Qualified Classname to: `math.Calculator`
+  
+  > [!Tip]
+  >
+  > For local classes it is expected to declare packages in relation to the `Main.java` file.
+  >
+  > This means that `package math;` indicates the following directory structure:
+  >
+  > ```
+  > |
+  > +-- Main.java
+  > +-- math
+  >     |
+  >     +-- Calculator.java
+  > ```
+  >
+  > This means that if you use `package math.calculators;` in your `SimpleCalculator.java` file it expects:
+  >
+  > ```
+  > |
+  > +-- Main.java
+  > +-- math
+  >     |
+  >     +-- calculators
+  >         |
+  >         +-- SimpleCalculator.java
+  > ```
 - `javac`/`java` expect that a directory name is the same as the package name when resolving Symbols (as well as all classes have the same file name as their name in the code)
 
   Meaning that for example compiling the following where no package names are defined will work:
