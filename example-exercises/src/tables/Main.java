@@ -51,7 +51,7 @@ public class Main {
     }
 
     public static void printTable(final int columns, final int rows, final int lines, final boolean html, final boolean debug) {
-        // Get max length of each value for output
+        // Get the max length of each value for output
         final int maxLengthCol = String.valueOf(columns).length();
         final int maxLengthRow = String.valueOf(rows).length();
         final int maxLengthLine = String.valueOf(lines).length();

@@ -49,6 +49,7 @@ public class Main {
             System.err.println("Tree size must be >= 3 for the next tree!");
             System.exit(-1);
         }
+        /*
         System.out.println("""
                             \\ /
                           -->*<--
@@ -64,7 +65,7 @@ public class Main {
                        /_\\_\\_\\_\\_\\_\\
                       /_/_/_/_/_/_/_\\
                            [___]
-                """);
+                """);*/
 
         final int debugLength = 16;
         System.out.printf("%s\\ /%n", " ".repeat(debugLength + treeSize - 1));
