@@ -32,3 +32,5 @@ dependency-reduced-pom.xml
 # Idea
 .idea
 *.iml
+/__pycache__
+java_summary.html
