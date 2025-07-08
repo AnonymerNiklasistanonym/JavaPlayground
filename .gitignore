@@ -34,3 +34,4 @@ dependency-reduced-pom.xml
 *.iml
 /__pycache__
 java_summary.html
+collection-basics/src/main/java/org/example/hello_world.txt
